@@ -5,6 +5,7 @@ import random
 import threading
 import time
 import ctypes
+import os
 
 user32 = ctypes.windll.user32
 screensize = user32.GetSystemMetrics(0), user32.GetSystemMetrics(1)
@@ -64,10 +65,11 @@ class Scores:
     last_score = 0
     highscore = 0
 
-    def __init__(self):
+    def __init__(self, filename="highscore.txt"):
+        self.filename = filename
         self.score = 0
         self.last_score = 0
-        self.highscore = 0
+        self.highscore = self.load_highscore()
         
     def scoring(self):
         self.score = self.score + 1
@@ -75,7 +77,20 @@ class Scores:
             self.last_score = self.score
         if self.score > self.highscore:
             self.highscore = self.score
+            self.save_highscore()
+            
+    def save_highscore(self):
+        with open(self.filename, 'w') as file:
+            file.write(str(self.highscore))
 
+    def load_highscore(self):
+        if os.path.exists(self.filename):
+            with open(self.filename, 'r') as file:
+                try:
+                    return int(file.read())
+                except ValueError:
+                    return 0
+        return 0
 
 
 class Timer:
@@ -128,13 +143,11 @@ class Game:
             if self.timer.time_left == 0:
                 self.type = - 2 
                 self.screen.fill('black')
-                
             if self.type == -2:
                 self.circle.draw("gray35")
                 self.time_ran_out_text()
                 self.score.score = 0
                 self.timer.reset()
-                
             if self.type == -1:
                 self.circle.draw("gray35")
                 self.loss_text()
