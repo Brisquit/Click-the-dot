@@ -1,2 +1,2 @@
 # Click-the-dot
-Game with object programming
+A game made using OOP on python, where you need to click the dot
