@@ -1,28 +1,25 @@
-import pygame
+import os
 import sys
 import math
 import random
-import threading
 import time
+import threading
 import ctypes
-import os
+import pygame
 
 user32 = ctypes.windll.user32
 screensize = user32.GetSystemMetrics(0), user32.GetSystemMetrics(1)
 [width, height]= screensize
 
-color = ""
-
 class Start:
 
     def __init__(self, game, pos=((width/2, height/2))):
         self.game = game
-        self.color = color
+        self.color = ""
         self.circle_pos = pos
 
     def draw(self, color):
          pygame.draw.circle(self.game.screen, color, self.circle_pos, width/30)
-         pass
 
     def collision(self) -> bool:
         mouse_pos = pygame.mouse.get_pos()
@@ -60,14 +57,11 @@ class Reverse(Start):
 
 class Scores:
 
-    score = 0
-    last_score = 0
-    highscore = 0
-
     def __init__(self, filename="highscore.txt"):
         self.filename = filename
         self.score = 0
         self.last_score = 0
+        self.highscore = 0
         self.highscore = self.load_highscore()
         
     def scoring(self):
