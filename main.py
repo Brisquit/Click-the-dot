@@ -58,7 +58,6 @@ class Reverse(Start):
         self.circle_pos = (x, y)
 
 
-
 class Scores:
 
     score = 0
