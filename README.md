@@ -22,4 +22,5 @@ The Factory design pattern was chosen for it's easy expansion if I ever want to 
 
 # Compostition
 The code uses Composition in the Game class to give meaning to the other classes, if Game didn't exist, the other classes would lose their meaning.
+
 ![image](https://github.com/user-attachments/assets/f1b49200-a52f-4bd1-ab85-c2c3afb6f277)
