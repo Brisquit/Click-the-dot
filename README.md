@@ -1,8 +1,13 @@
 # Click-the-dot
-A game made using OOP on python, where you need to click the dot.
-The code Implements all 4 pillars of Object-Oriented Programming.
+My goal with this project was to learn how to make a game using python, while also polishing up my OOP skills.
+
+The game was made using OOP in python, where you need to click the dot.
+To be able to play the game, you need any Python interpreter with pygame installed.
+To run the game, all you need to do is press run python file, and it should boot up smoothly.
 
 # OOP-Pillars
+The code Implements all 4 pillars of Object-Oriented Programming.
+
 Polymorphism is used to differentiate what kind of randomise.pos is used whenever self.circle is called, which is decided by which self.type is called making for different results each time.
 ![image](https://github.com/user-attachments/assets/2c972faa-a186-4145-becc-2cdf69881906)
 
@@ -24,3 +29,7 @@ The Factory design pattern was chosen for it's easy expansion if I ever want to 
 The code uses Composition in the Game class to give meaning to the other classes, if Game didn't exist, the other classes would lose their meaning.
 
 ![image](https://github.com/user-attachments/assets/f1b49200-a52f-4bd1-ab85-c2c3afb6f277)
+# Results
+One of the hardest parts of this project for me was firstly learning how pygame actually works, because I had no prior experience working with pygame. But the hardest part was definitely learning how to add multi threading capabilities into the code, since if I couldn't figure that out, the timer would not decrease if the mouse was moving, since it couldn't process 2 events happening at once.
+# Conclusions
+Working on this game was extremely fun overall. I learned how to work with pygame, learned multithreading. If I ever feel like it, I might work more on this game, just to see what I can transform it into.
