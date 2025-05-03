@@ -13,6 +13,7 @@ Inheritance is used so other classes could inherit draw() and collision() from c
 ![image](https://github.com/user-attachments/assets/e5a7f7e7-ffe1-47db-bc0a-57cee597ab7a)
 
 Encapsulation is used to encapsulate the data inside the Scores class, and to modify the score in the class instead of changing it from outside.
+
 ![image](https://github.com/user-attachments/assets/6a412fd6-43cc-430b-9a0c-33e79eae38f8)
 
 # Design-Pattern
