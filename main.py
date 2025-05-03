@@ -114,7 +114,6 @@ class Game:
         pygame.display.set_caption('Click the dot')
         self.font = pygame.font.Font(None, 30)
         self.score = Scores()
-
         self.timer = Timer()
         self.type = 0
         self.create_start_circle()
@@ -129,11 +128,13 @@ class Game:
             if self.timer.time_left == 0:
                 self.type = - 2 
                 self.screen.fill('black')
+                
             if self.type == -2:
                 self.circle.draw("gray35")
                 self.time_ran_out_text()
                 self.score.score = 0
                 self.timer.reset()
+                
             if self.type == -1:
                 self.circle.draw("gray35")
                 self.loss_text()
