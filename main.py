@@ -57,8 +57,9 @@ class Reverse(Start):
 
 class Scores:
 
-    def __init__(self, filename="highscore.txt"):
-        self.filename = filename
+    def __init__(self, filename='highscore.txt'):
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        self.filename = os.path.join(script_dir, filename)
         self.score = 0
         self.last_score = 0
         self.highscore = 0
@@ -111,7 +112,6 @@ class Timer:
     def reset(self):
         self.stop()
         self.time_left = 30 
-
 
 
 class Game:
