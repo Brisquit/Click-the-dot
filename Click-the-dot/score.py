@@ -1,6 +1,6 @@
 import os
 
-class Score:
+class Scores:
 
     def __init__(self, filename="highscore.txt"):
         self.filename = filename
