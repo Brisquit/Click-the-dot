@@ -28,7 +28,7 @@ The code uses Composition in the Game class to give meaning to the other classes
 
 ![image](https://github.com/user-attachments/assets/f1b49200-a52f-4bd1-ab85-c2c3afb6f277)
 # Creator's Thoughts
-Workng on this project was a very fun experience.
+Working on this project was a very fun experience.
 I learned how to make a game using python.
 I delved deeper into how OOP works.
 I might work on this game more, just to see how much it can expand with my own 2 hands.
