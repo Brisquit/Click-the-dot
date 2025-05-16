@@ -1,6 +1,8 @@
 # Click-the-dot
 A game made using OOP on python, where you need to click the dot.
 The code Implements all 4 pillars of Object-Oriented Programming.
+# How-To-Play
+To play the game, you need to double click the .exe file
 
 # OOP-Pillars
 Polymorphism is used to differentiate what kind of randomise.pos is used whenever self.circle is called, which is decided by which self.type is called making for different results each time.
@@ -25,6 +27,9 @@ The Factory design pattern was chosen for it's easy expansion if I ever want to 
 The code uses Composition in the Game class to give meaning to the other classes, if Game didn't exist, the other classes would lose their meaning.
 
 ![image](https://github.com/user-attachments/assets/f1b49200-a52f-4bd1-ab85-c2c3afb6f277)
+# Creator's Thoughts
+Workng on this project was a very fun experience.
+I learned how to make a game using python.
+I delved deeper into how OOP works.
+I might work on this game more, just to see how much it can expand with my own 2 hands.
 
-# How-To-Play
-To play the game, you need to double click the .exe file
