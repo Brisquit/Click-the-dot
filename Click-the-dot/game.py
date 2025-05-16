@@ -27,6 +27,7 @@ class Game:
             self.events()
             self.screen.fill('black')
             if self.timer.time_left == 0:
+                self.type = -2
                 self.screen.fill('black')
             if self.type == -2:
                 self.time_ran_out_text()
