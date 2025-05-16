@@ -4,7 +4,7 @@ import pygame
 
 from native_resolution import width, height
 from circle import Start, Circle, Reverse
-from score import Score
+from score import Scores
 from timer import Timer
 
 class Game:
@@ -14,7 +14,7 @@ class Game:
         self.screen = pygame.display.set_mode((width, height))
         pygame.display.set_caption('Click the dot')
         self.font = pygame.font.Font(None, 30)
-        self.score = Score()
+        self.score = Scores()
         self.timer = Timer()
         self.type = 0
         self.create_start_circle()
