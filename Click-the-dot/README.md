@@ -4,6 +4,7 @@ The code Implements all 4 pillars of Object-Oriented Programming.
 
 # OOP-Pillars
 Polymorphism is used to differentiate what kind of randomise.pos is used whenever self.circle is called, which is decided by which self.type is called making for different results each time.
+
 ![image](https://github.com/user-attachments/assets/2c972faa-a186-4145-becc-2cdf69881906)
 
 Abstraction is used to in the Start class, which only exposes the necessary methods. 
