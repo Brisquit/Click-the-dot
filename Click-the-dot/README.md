@@ -4,7 +4,6 @@ The code Implements all 4 pillars of Object-Oriented Programming.
 
 # OOP-Pillars
 Polymorphism is used to differentiate what kind of randomise.pos is used whenever self.circle is called, which is decided by which self.type is called making for different results each time.
-
 ![image](https://github.com/user-attachments/assets/2c972faa-a186-4145-becc-2cdf69881906)
 
 Abstraction is used to in the Start class, which only exposes the necessary methods. 
@@ -25,6 +24,3 @@ The Factory design pattern was chosen for it's easy expansion if I ever want to 
 The code uses Composition in the Game class to give meaning to the other classes, if Game didn't exist, the other classes would lose their meaning.
 
 ![image](https://github.com/user-attachments/assets/f1b49200-a52f-4bd1-ab85-c2c3afb6f277)
-
-# How-To-Play
-Click the .exe file to start playing
